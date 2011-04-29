@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604BC3F4136B6AAA0003CA08 /* PersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC3F2136B6AAA0003CA08 /* PersonController.m */; };
+		604BC3F5136B6AAA0003CA08 /* PersonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604BC3F3136B6AAA0003CA08 /* PersonController.xib */; };
 		60DD9DFE136B5AA9004F2564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFD136B5AA9004F2564 /* UIKit.framework */; };
 		60DD9E00136B5AA9004F2564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFF136B5AA9004F2564 /* Foundation.framework */; };
 		60DD9E02136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		604BC3F1136B6AAA0003CA08 /* PersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonController.h; path = Controllers/PersonController.h; sourceTree = "<group>"; };
+		604BC3F2136B6AAA0003CA08 /* PersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonController.m; path = Controllers/PersonController.m; sourceTree = "<group>"; };
+		604BC3F3136B6AAA0003CA08 /* PersonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonController.xib; path = Controllers/PersonController.xib; sourceTree = "<group>"; };
 		60DD9DF9136B5AA9004F2564 /* Soaringbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soaringbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DD9DFD136B5AA9004F2564 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		60DD9DFF136B5AA9004F2564 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +172,9 @@
 				60DD9E41136B5F7A004F2564 /* PeopleController.h */,
 				60DD9E42136B5F7A004F2564 /* PeopleController.m */,
 				60DD9E43136B5F7A004F2564 /* PeopleController.xib */,
+				604BC3F1136B6AAA0003CA08 /* PersonController.h */,
+				604BC3F2136B6AAA0003CA08 /* PersonController.m */,
+				604BC3F3136B6AAA0003CA08 /* PersonController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				60DD9E08136B5AA9004F2564 /* InfoPlist.strings in Resources */,
 				60DD9E11136B5AA9004F2564 /* MainWindow.xib in Resources */,
 				60DD9E45136B5F7A004F2564 /* PeopleController.xib in Resources */,
+				604BC3F5136B6AAA0003CA08 /* PersonController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +291,7 @@
 				60DD9E0B136B5AA9004F2564 /* main.m in Sources */,
 				60DD9E3F136B5E96004F2564 /* SoaringbookAppDelegate.m in Sources */,
 				60DD9E44136B5F7A004F2564 /* PeopleController.m in Sources */,
+				604BC3F4136B6AAA0003CA08 /* PersonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +472,7 @@
 				60DD9E38136B5AA9004F2564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60DD9E39136B5AA9004F2564 /* Build configuration list for PBXNativeTarget "SoaringbookTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +481,7 @@
 				60DD9E3B136B5AA9004F2564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

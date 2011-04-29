@@ -7,6 +7,11 @@
 //
 
 #import "PeopleController.h"
+#import "PersonController.h"
+
+@interface PeopleController (SheetActions)
+- (void)showFormInEditableMode:(BOOL)editable;
+@end
 
 @implementation PeopleController
 
@@ -14,6 +19,27 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+#pragma mark - Actions
+
+- (IBAction)add:(id)sender {
+    [self showFormInEditableMode:NO];
+}
+
+#pragma mark - Sheet actions
+
+- (void)showFormInEditableMode:(BOOL)editable {
+    PersonController *personController = [[PersonController alloc] initWithNibName:@"PersonController" bundle:[NSBundle mainBundle]];
+    personController.editable = editable;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:personController];
+    [personController release];
+    navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+    navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self.navigationController presentModalViewController:navigationController animated:YES];
+    [navigationController release];
 }
 
 #pragma mark - Orientation
@@ -24,14 +50,14 @@
 
 #pragma mark - Table view delegate
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
@@ -39,6 +65,12 @@
     cell.textLabel.text = @"Zot Franske";
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self showFormInEditableMode:YES];
+    
+    [aTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 /*
@@ -79,17 +111,5 @@
     return YES;
 }
 */
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here. Create and push another view controller.
-//    /*
-//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
-//     [detailViewController release];
-//     */
-//}
 
 @end

@@ -12,18 +12,16 @@
 		60DD9E02136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */; };
 		60DD9E08136B5AA9004F2564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E06136B5AA9004F2564 /* InfoPlist.strings */; };
 		60DD9E0B136B5AA9004F2564 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E0A136B5AA9004F2564 /* main.m */; };
-		60DD9E0E136B5AA9004F2564 /* SoaringbookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E0D136B5AA9004F2564 /* SoaringbookAppDelegate.m */; };
 		60DD9E11136B5AA9004F2564 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E0F136B5AA9004F2564 /* MainWindow.xib */; };
-		60DD9E14136B5AA9004F2564 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E13136B5AA9004F2564 /* FirstViewController.m */; };
-		60DD9E17136B5AA9004F2564 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E16136B5AA9004F2564 /* SecondViewController.m */; };
-		60DD9E1A136B5AA9004F2564 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E18136B5AA9004F2564 /* FirstView.xib */; };
-		60DD9E1D136B5AA9004F2564 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E1B136B5AA9004F2564 /* SecondView.xib */; };
 		60DD9E24136B5AA9004F2564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFD136B5AA9004F2564 /* UIKit.framework */; };
 		60DD9E25136B5AA9004F2564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFF136B5AA9004F2564 /* Foundation.framework */; };
 		60DD9E26136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */; };
 		60DD9E2E136B5AA9004F2564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E2C136B5AA9004F2564 /* InfoPlist.strings */; };
 		60DD9E31136B5AA9004F2564 /* SoaringbookTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E30136B5AA9004F2564 /* SoaringbookTests.h */; };
 		60DD9E33136B5AA9004F2564 /* SoaringbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E32136B5AA9004F2564 /* SoaringbookTests.m */; };
+		60DD9E3F136B5E96004F2564 /* SoaringbookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E3E136B5E96004F2564 /* SoaringbookAppDelegate.m */; };
+		60DD9E44136B5F7A004F2564 /* PeopleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD9E42136B5F7A004F2564 /* PeopleController.m */; };
+		60DD9E45136B5F7A004F2564 /* PeopleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60DD9E43136B5F7A004F2564 /* PeopleController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,21 +43,18 @@
 		60DD9E07136B5AA9004F2564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60DD9E09136B5AA9004F2564 /* Soaringbook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Soaringbook-Prefix.pch"; sourceTree = "<group>"; };
 		60DD9E0A136B5AA9004F2564 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		60DD9E0C136B5AA9004F2564 /* SoaringbookAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoaringbookAppDelegate.h; sourceTree = "<group>"; };
-		60DD9E0D136B5AA9004F2564 /* SoaringbookAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoaringbookAppDelegate.m; sourceTree = "<group>"; };
 		60DD9E10136B5AA9004F2564 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		60DD9E12136B5AA9004F2564 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		60DD9E13136B5AA9004F2564 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		60DD9E15136B5AA9004F2564 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		60DD9E16136B5AA9004F2564 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		60DD9E19136B5AA9004F2564 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		60DD9E1C136B5AA9004F2564 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		60DD9E23136B5AA9004F2564 /* SoaringbookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoaringbookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DD9E2B136B5AA9004F2564 /* SoaringbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoaringbookTests-Info.plist"; sourceTree = "<group>"; };
 		60DD9E2D136B5AA9004F2564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60DD9E2F136B5AA9004F2564 /* SoaringbookTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoaringbookTests-Prefix.pch"; sourceTree = "<group>"; };
 		60DD9E30136B5AA9004F2564 /* SoaringbookTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoaringbookTests.h; sourceTree = "<group>"; };
 		60DD9E32136B5AA9004F2564 /* SoaringbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoaringbookTests.m; sourceTree = "<group>"; };
+		60DD9E3D136B5E96004F2564 /* SoaringbookAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoaringbookAppDelegate.h; sourceTree = "<group>"; };
+		60DD9E3E136B5E96004F2564 /* SoaringbookAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoaringbookAppDelegate.m; sourceTree = "<group>"; };
+		60DD9E41136B5F7A004F2564 /* PeopleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeopleController.h; path = Controllers/PeopleController.h; sourceTree = "<group>"; };
+		60DD9E42136B5F7A004F2564 /* PeopleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeopleController.m; path = Controllers/PeopleController.m; sourceTree = "<group>"; };
+		60DD9E43136B5F7A004F2564 /* PeopleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PeopleController.xib; path = Controllers/PeopleController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +113,8 @@
 		60DD9E03136B5AA9004F2564 /* Soaringbook */ = {
 			isa = PBXGroup;
 			children = (
-				60DD9E0C136B5AA9004F2564 /* SoaringbookAppDelegate.h */,
-				60DD9E0D136B5AA9004F2564 /* SoaringbookAppDelegate.m */,
+				60DD9E3C136B5E96004F2564 /* Classes */,
 				60DD9E0F136B5AA9004F2564 /* MainWindow.xib */,
-				60DD9E12136B5AA9004F2564 /* FirstViewController.h */,
-				60DD9E13136B5AA9004F2564 /* FirstViewController.m */,
-				60DD9E15136B5AA9004F2564 /* SecondViewController.h */,
-				60DD9E16136B5AA9004F2564 /* SecondViewController.m */,
-				60DD9E18136B5AA9004F2564 /* FirstView.xib */,
-				60DD9E1B136B5AA9004F2564 /* SecondView.xib */,
 				60DD9E04136B5AA9004F2564 /* Supporting Files */,
 			);
 			path = Soaringbook;
@@ -161,6 +149,26 @@
 				60DD9E2F136B5AA9004F2564 /* SoaringbookTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60DD9E3C136B5E96004F2564 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60DD9E40136B5F14004F2564 /* Controllers */,
+				60DD9E3D136B5E96004F2564 /* SoaringbookAppDelegate.h */,
+				60DD9E3E136B5E96004F2564 /* SoaringbookAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		60DD9E40136B5F14004F2564 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60DD9E41136B5F7A004F2564 /* PeopleController.h */,
+				60DD9E42136B5F7A004F2564 /* PeopleController.m */,
+				60DD9E43136B5F7A004F2564 /* PeopleController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +243,7 @@
 			files = (
 				60DD9E08136B5AA9004F2564 /* InfoPlist.strings in Resources */,
 				60DD9E11136B5AA9004F2564 /* MainWindow.xib in Resources */,
-				60DD9E1A136B5AA9004F2564 /* FirstView.xib in Resources */,
-				60DD9E1D136B5AA9004F2564 /* SecondView.xib in Resources */,
+				60DD9E45136B5F7A004F2564 /* PeopleController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DD9E0B136B5AA9004F2564 /* main.m in Sources */,
-				60DD9E0E136B5AA9004F2564 /* SoaringbookAppDelegate.m in Sources */,
-				60DD9E14136B5AA9004F2564 /* FirstViewController.m in Sources */,
-				60DD9E17136B5AA9004F2564 /* SecondViewController.m in Sources */,
+				60DD9E3F136B5E96004F2564 /* SoaringbookAppDelegate.m in Sources */,
+				60DD9E44136B5F7A004F2564 /* PeopleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,22 +318,6 @@
 				60DD9E10136B5AA9004F2564 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		60DD9E18136B5AA9004F2564 /* FirstView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60DD9E19136B5AA9004F2564 /* en */,
-			);
-			name = FirstView.xib;
-			sourceTree = "<group>";
-		};
-		60DD9E1B136B5AA9004F2564 /* SecondView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60DD9E1C136B5AA9004F2564 /* en */,
-			);
-			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
 		60DD9E2C136B5AA9004F2564 /* InfoPlist.strings */ = {
@@ -383,7 +373,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Soaringbook/Soaringbook-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Soaringbook/Soaringbook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,7 +388,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Soaringbook/Soaringbook-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Soaringbook/Soaringbook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

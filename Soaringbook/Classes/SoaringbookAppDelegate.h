@@ -6,14 +6,7 @@
 //  Copyright 2011 10to1. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface SoaringbookAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-
-}
-
+@interface SoaringbookAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
-
 @end

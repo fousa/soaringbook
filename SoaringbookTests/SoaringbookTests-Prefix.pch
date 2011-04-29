@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SoaringbookTests' target in the 'SoaringbookTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

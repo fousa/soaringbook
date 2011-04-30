@@ -61,6 +61,8 @@
     }
     
     [self validate];
+    
+    [self.name becomeFirstResponder];
 }
 
 #pragma mark - Actions
@@ -92,6 +94,14 @@
 
 - (IBAction)change:(id)sender {
     [self validate];
+}
+
+#pragma mark - Field actions
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField {
+    [self save:nil];
+    
+    return NO;
 }
 
 #pragma mark - Sheet actions

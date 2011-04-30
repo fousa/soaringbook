@@ -42,6 +42,9 @@
 }
 
 - (IBAction)edit:(id)sender {
+    self.navigationItem.rightBarButtonItem.title = self.tableView.editing ? @"Edit" : @"Done";
+    self.navigationItem.rightBarButtonItem.style = self.tableView.editing ? UIBarButtonItemStyleBordered : UIBarButtonItemStyleDone;
+    
     [self.tableView setEditing:!self.tableView.editing animated:YES];
 }
 

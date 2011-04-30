@@ -6,11 +6,11 @@
 //  Copyright 2011 10to1. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GliderController.h"
 
+@interface GlidersController : UITableViewController <GliderControllerDelegate>
+@property (nonatomic, retain) NSMutableArray *gliders;
 
-@interface GlidersController : UITableViewController {
-    
-}
-
+- (IBAction)add:(id)sender;
+- (IBAction)edit:(id)sender;
 @end

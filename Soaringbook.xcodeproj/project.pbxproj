@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		604BC3F4136B6AAA0003CA08 /* PersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC3F2136B6AAA0003CA08 /* PersonController.m */; };
 		604BC3F5136B6AAA0003CA08 /* PersonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604BC3F3136B6AAA0003CA08 /* PersonController.xib */; };
+		604BC3FB136B753B0003CA08 /* Soaringbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 604BC3F9136B753B0003CA08 /* Soaringbook.xcdatamodeld */; };
+		604BC401136B76950003CA08 /* _Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC3FE136B76950003CA08 /* _Person.m */; };
+		604BC402136B76950003CA08 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC400136B76950003CA08 /* Person.m */; };
+		604BC404136B76C10003CA08 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604BC403136B76C10003CA08 /* CoreData.framework */; };
+		604BC408136B77250003CA08 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC407136B77250003CA08 /* DataController.m */; };
+		604BC45B136B81210003CA08 /* JAVBinarySearchAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */; };
 		60DD9DFE136B5AA9004F2564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFD136B5AA9004F2564 /* UIKit.framework */; };
 		60DD9E00136B5AA9004F2564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFF136B5AA9004F2564 /* Foundation.framework */; };
 		60DD9E02136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */; };
@@ -40,6 +46,16 @@
 		604BC3F1136B6AAA0003CA08 /* PersonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonController.h; path = Controllers/PersonController.h; sourceTree = "<group>"; };
 		604BC3F2136B6AAA0003CA08 /* PersonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonController.m; path = Controllers/PersonController.m; sourceTree = "<group>"; };
 		604BC3F3136B6AAA0003CA08 /* PersonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonController.xib; path = Controllers/PersonController.xib; sourceTree = "<group>"; };
+		604BC3FA136B753B0003CA08 /* Soaringbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soaringbook.xcdatamodel; sourceTree = "<group>"; };
+		604BC3FD136B76950003CA08 /* _Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Person.h; path = Models/_Person.h; sourceTree = "<group>"; };
+		604BC3FE136B76950003CA08 /* _Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Person.m; path = Models/_Person.m; sourceTree = "<group>"; };
+		604BC3FF136B76950003CA08 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		604BC400136B76950003CA08 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
+		604BC403136B76C10003CA08 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		604BC406136B77250003CA08 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		604BC407136B77250003CA08 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		604BC459136B81210003CA08 /* JAVBinarySearchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAVBinarySearchAdditions.h; sourceTree = "<group>"; };
+		604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAVBinarySearchAdditions.m; sourceTree = "<group>"; };
 		60DD9DF9136B5AA9004F2564 /* Soaringbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soaringbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DD9DFD136B5AA9004F2564 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		60DD9DFF136B5AA9004F2564 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604BC404136B76C10003CA08 /* CoreData.framework in Frameworks */,
 				60DD9DFE136B5AA9004F2564 /* UIKit.framework in Frameworks */,
 				60DD9E00136B5AA9004F2564 /* Foundation.framework in Frameworks */,
 				60DD9E02136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +103,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604BC3F8136B75000003CA08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				604BC3F9136B753B0003CA08 /* Soaringbook.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		604BC3FC136B75510003CA08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				604BC3FD136B76950003CA08 /* _Person.h */,
+				604BC3FE136B76950003CA08 /* _Person.m */,
+				604BC3FF136B76950003CA08 /* Person.h */,
+				604BC400136B76950003CA08 /* Person.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		604BC405136B77250003CA08 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				604BC406136B77250003CA08 /* DataController.h */,
+				604BC407136B77250003CA08 /* DataController.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		604BC457136B81210003CA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				604BC458136B81210003CA08 /* JAVBinarySearchAdditions */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		604BC458136B81210003CA08 /* JAVBinarySearchAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				604BC459136B81210003CA08 /* JAVBinarySearchAdditions.h */,
+				604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */,
+			);
+			path = JAVBinarySearchAdditions;
+			sourceTree = "<group>";
+		};
 		60DD9DEE136B5AA9004F2564 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +170,7 @@
 		60DD9DFC136B5AA9004F2564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				604BC403136B76C10003CA08 /* CoreData.framework */,
 				60DD9DFD136B5AA9004F2564 /* UIKit.framework */,
 				60DD9DFF136B5AA9004F2564 /* Foundation.framework */,
 				60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */,
@@ -120,6 +183,7 @@
 			children = (
 				60DD9E3C136B5E96004F2564 /* Classes */,
 				60DD9E0F136B5AA9004F2564 /* MainWindow.xib */,
+				604BC3F8136B75000003CA08 /* Resources */,
 				60DD9E04136B5AA9004F2564 /* Supporting Files */,
 			);
 			path = Soaringbook;
@@ -159,6 +223,9 @@
 		60DD9E3C136B5E96004F2564 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				604BC457136B81210003CA08 /* Frameworks */,
+				604BC3FC136B75510003CA08 /* Models */,
+				604BC405136B77250003CA08 /* Data */,
 				60DD9E40136B5F14004F2564 /* Controllers */,
 				60DD9E3D136B5E96004F2564 /* SoaringbookAppDelegate.h */,
 				60DD9E3E136B5E96004F2564 /* SoaringbookAppDelegate.m */,
@@ -292,6 +359,11 @@
 				60DD9E3F136B5E96004F2564 /* SoaringbookAppDelegate.m in Sources */,
 				60DD9E44136B5F7A004F2564 /* PeopleController.m in Sources */,
 				604BC3F4136B6AAA0003CA08 /* PersonController.m in Sources */,
+				604BC3FB136B753B0003CA08 /* Soaringbook.xcdatamodeld in Sources */,
+				604BC401136B76950003CA08 /* _Person.m in Sources */,
+				604BC402136B76950003CA08 /* Person.m in Sources */,
+				604BC408136B77250003CA08 /* DataController.m in Sources */,
+				604BC45B136B81210003CA08 /* JAVBinarySearchAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +556,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		604BC3F9136B753B0003CA08 /* Soaringbook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				604BC3FA136B753B0003CA08 /* Soaringbook.xcdatamodel */,
+			);
+			currentVersion = 604BC3FA136B753B0003CA08 /* Soaringbook.xcdatamodel */;
+			path = Soaringbook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60DD9DF0136B5AA9004F2564 /* Project object */;
 }

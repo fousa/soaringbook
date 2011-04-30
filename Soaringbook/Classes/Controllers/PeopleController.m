@@ -7,31 +7,50 @@
 //
 
 #import "PeopleController.h"
-#import "PersonController.h"
+
+#import "JAVBinarySearchAdditions.h"
+
+#import "DataController.h"
+
+#import "Person.h"
 
 @interface PeopleController (SheetActions)
-- (void)showFormInEditableMode:(BOOL)editable;
+- (void)showFormFor:(Person *)person;
 @end
 
 @implementation PeopleController
+@synthesize people;
 
 #pragma mark - Memory
 
 - (void)dealloc {
+    self.people = nil;
+    
     [super dealloc];
+}
+
+#pragma mark - View flow
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.people = [NSMutableArray arrayWithArray:[Person fetchAllSortedPeople:MOC]];
 }
 
 #pragma mark - Actions
 
 - (IBAction)add:(id)sender {
-    [self showFormInEditableMode:NO];
+    [self showFormFor:nil];
+}
+
+- (IBAction)edit:(id)sender {
+    [self.tableView setEditing:!self.tableView.editing animated:YES];
 }
 
 #pragma mark - Sheet actions
 
-- (void)showFormInEditableMode:(BOOL)editable {
+- (void)showFormFor:(Person *)person {
     PersonController *personController = [[PersonController alloc] initWithNibName:@"PersonController" bundle:[NSBundle mainBundle]];
-    personController.editable = editable;
+    personController.person = person;
+    personController.delegate = self;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:personController];
     [personController release];
@@ -40,6 +59,21 @@
     
     [self.navigationController presentModalViewController:navigationController animated:YES];
     [navigationController release];
+}
+
+#pragma mark - Person delegate methods
+
+- (void)editPerson:(Person *)person {
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)addPerson:(Person *)person {
+    unsigned index = [self.people indexOfObject:person inArraySortedBy:@selector(compare:)];
+	if ([self.people count] == 0 || index >= [self.people count]) {
+		unsigned insertIndex = [self.people indexOfObject:person whenAddingToArraySortedBy:@selector(compare:)];
+		[self.people addObject:person intoArraySortedBy:@selector(compare:)];
+		[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:insertIndex inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+	}
 }
 
 #pragma mark - Orientation
@@ -51,7 +85,7 @@
 #pragma mark - Table view delegate
 
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [self.people count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,13 +96,15 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.textLabel.text = @"Zot Franske";
+    Person *person = [self.people objectAtIndex:indexPath.row];
+    cell.textLabel.text = person.name;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self showFormInEditableMode:YES];
+    Person *person = [self.people objectAtIndex:indexPath.row];
+    [self showFormFor:person];
     
     [aTableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -78,12 +114,13 @@
 }
 
 - (void)tableView:(UITableView *)aTableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        // Delete the row from the data source
-//        [aTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-//        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//    }   
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        Person *person = [self.people objectAtIndex:indexPath.row];
+        [self.people removeObject:person];
+        [MOC deleteObject:person];
+        [MOC save:nil];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
 }
 
 @end

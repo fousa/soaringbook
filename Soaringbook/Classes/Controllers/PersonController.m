@@ -8,16 +8,26 @@
 
 #import "PersonController.h"
 
+#import "PeopleController.h"
+
+#import "DataController.h"
+
 @interface PersonController (SheetActions)
 - (void)close;
 @end
 
 @implementation PersonController
-@synthesize editable;
+@synthesize person, delegate, name, pilot, towPilot, instructor;
 
 #pragma mark - Memory
 
 - (void)dealloc {
+    self.person = nil;
+    self.name = nil;
+    self.pilot = nil;
+    self.towPilot = nil;
+    self.instructor = nil;
+    
     [super dealloc];
 }
 
@@ -39,7 +49,15 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.title = self.editable ? @"Edit person" : @"Add person";
+    if (self.person == nil) {
+        self.title = @"Add person";
+    } else {
+        self.title = @"Edit person";
+        self.name.text = self.person.name;
+        self.pilot.on = self.person.pilotValue;
+        self.towPilot.on = self.person.towPilotValue;
+        self.instructor.on = self.person.instructorValue;
+    }
 }
 
 #pragma mark - Actions
@@ -49,6 +67,21 @@
 }
 
 - (IBAction)save:(id)sender {
+    BOOL edit = self.person != nil;
+    if (!edit) self.person = [Person insertInManagedObjectContext:MOC];
+    
+    self.person.name = self.name.text;
+    self.person.pilotValue = self.pilot.on;
+    self.person.towPilotValue = self.towPilot.on;
+    self.person.instructorValue = self.instructor.on;
+    [MOC save:nil];
+    
+    if (!edit && [self.delegate respondsToSelector:@selector(addPerson:)]) {
+        [self.delegate performSelector:@selector(addPerson:) withObject:self.person];
+    } else if (edit && [self.delegate respondsToSelector:@selector(editPerson:)]) {
+        [self.delegate performSelector:@selector(editPerson:) withObject:self.person];
+    }
+    
     [self close];
 }
 

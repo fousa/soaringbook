@@ -6,6 +6,11 @@
 //  Copyright 2011 10to1. All rights reserved.
 //
 
-@interface PeopleController : UITableViewController
+#import "PersonController.h"
+
+@interface PeopleController : UITableViewController <PersonControllerDelegate>
+@property (nonatomic, retain) NSMutableArray *people;
+
 - (IBAction)add:(id)sender;
+- (IBAction)edit:(id)sender;
 @end

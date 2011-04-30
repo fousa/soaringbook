@@ -88,6 +88,17 @@
     [self validate];
 }
 
+#pragma mark - Field actions
+
+-(BOOL)textFieldShouldReturn:(UITextField*)textField {
+    if (textField == self.identification) {
+        [self.type becomeFirstResponder];
+    } else {
+        [self save:nil];
+    }
+    return NO;
+}
+
 #pragma mark - Sheet actions
 
 - (void)close {

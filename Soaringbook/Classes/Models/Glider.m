@@ -1,11 +1,11 @@
-#import "TowPlane.h"
+#import "Glider.h"
 
-@implementation TowPlane
+@implementation Glider
 
 #pragma mark - Sorting
 
-+ (NSArray *)fetchAllSortedTowPlanes:(NSManagedObjectContext*)moc_ {
-	return [[TowPlane fetchAllTowPlanes:moc_] sortedArrayUsingDescriptors:[TowPlane sorters]];
++ (NSArray *)fetchAllSortedGliders:(NSManagedObjectContext*)moc_ {
+	return [[Glider fetchAllGliders:moc_] sortedArrayUsingDescriptors:[Glider sorters]];
 }
 
 + (NSArray *)sorters {
@@ -18,8 +18,8 @@
 
 #pragma mark - Comparison
 
-- (NSComparisonResult)compare:(TowPlane *)aTowPlane {
-    return [self.identification compare:aTowPlane.identification];
+- (NSComparisonResult)compare:(Glider *)aGlider {
+    return [self.identification compare:aGlider.identification];
 }
 
 @end

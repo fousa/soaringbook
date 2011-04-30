@@ -56,6 +56,7 @@
 		604BC407136B77250003CA08 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		604BC459136B81210003CA08 /* JAVBinarySearchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAVBinarySearchAdditions.h; sourceTree = "<group>"; };
 		604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAVBinarySearchAdditions.m; sourceTree = "<group>"; };
+		604BC464136B8D9F0003CA08 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		60DD9DF9136B5AA9004F2564 /* Soaringbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soaringbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DD9DFD136B5AA9004F2564 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		60DD9DFF136B5AA9004F2564 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -196,6 +197,7 @@
 				60DD9E06136B5AA9004F2564 /* InfoPlist.strings */,
 				60DD9E09136B5AA9004F2564 /* Soaringbook-Prefix.pch */,
 				60DD9E0A136B5AA9004F2564 /* main.m */,
+				604BC464136B8D9F0003CA08 /* CommonMacros.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

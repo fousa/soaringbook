@@ -14,6 +14,7 @@
 
 @interface PersonController (SheetActions)
 - (void)close;
+- (void)validate;
 @end
 
 @implementation PersonController
@@ -58,6 +59,8 @@
         self.towPilot.on = self.person.towPilotValue;
         self.instructor.on = self.person.instructorValue;
     }
+    
+    [self validate];
 }
 
 #pragma mark - Actions
@@ -85,10 +88,22 @@
     [self close];
 }
 
+#pragma mark - Changes
+
+- (IBAction)change:(id)sender {
+    [self validate];
+}
+
 #pragma mark - Sheet actions
 
 - (void)close {
     [self.navigationController.parentViewController dismissModalViewControllerAnimated:YES];
+}
+
+- (void)validate {
+    BOOL valid = !IsEmpty(self.name.text);
+    valid = valid && ((self.instructor.on == YES && self.pilot.on == YES) || self.instructor.on == NO);
+    self.navigationItem.rightBarButtonItem.enabled = valid;
 }
 
 #pragma mark - Orientation

@@ -21,4 +21,6 @@
 @property (nonatomic, retain) IBOutlet UISwitch *pilot;
 @property (nonatomic, retain) IBOutlet UISwitch *towPilot;
 @property (nonatomic, retain) IBOutlet UISwitch *instructor;
+
+- (IBAction)change:(id)sender;
 @end

@@ -17,6 +17,12 @@
 		604BC45B136B81210003CA08 /* JAVBinarySearchAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */; };
 		604BC46F136B988E0003CA08 /* _TowPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC46C136B988E0003CA08 /* _TowPlane.m */; };
 		604BC470136B988E0003CA08 /* TowPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC46E136B988E0003CA08 /* TowPlane.m */; };
+		60700B3E136C394A00F8774A /* GlidersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60700B3C136C394A00F8774A /* GlidersController.m */; };
+		60700B3F136C394A00F8774A /* GlidersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60700B3D136C394A00F8774A /* GlidersController.xib */; };
+		60700B43136C395400F8774A /* GliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60700B41136C395400F8774A /* GliderController.m */; };
+		60700B44136C395400F8774A /* GliderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60700B42136C395400F8774A /* GliderController.xib */; };
+		60700B49136C39A500F8774A /* _Glider.m in Sources */ = {isa = PBXBuildFile; fileRef = 60700B46136C39A500F8774A /* _Glider.m */; };
+		60700B4A136C39A500F8774A /* Glider.m in Sources */ = {isa = PBXBuildFile; fileRef = 60700B48136C39A500F8774A /* Glider.m */; };
 		60A0EE60136C2A7600277125 /* TowPlanesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0EE5E136C2A7600277125 /* TowPlanesController.m */; };
 		60A0EE61136C2A7600277125 /* TowPlanesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60A0EE5F136C2A7600277125 /* TowPlanesController.xib */; };
 		60A0EE65136C2B6A00277125 /* TowPlaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A0EE63136C2B6A00277125 /* TowPlaneController.m */; };
@@ -67,6 +73,16 @@
 		604BC46C136B988E0003CA08 /* _TowPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _TowPlane.m; path = Models/_TowPlane.m; sourceTree = "<group>"; };
 		604BC46D136B988E0003CA08 /* TowPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TowPlane.h; path = Models/TowPlane.h; sourceTree = "<group>"; };
 		604BC46E136B988E0003CA08 /* TowPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TowPlane.m; path = Models/TowPlane.m; sourceTree = "<group>"; };
+		60700B3B136C394A00F8774A /* GlidersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlidersController.h; path = Controllers/GlidersController.h; sourceTree = "<group>"; };
+		60700B3C136C394A00F8774A /* GlidersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlidersController.m; path = Controllers/GlidersController.m; sourceTree = "<group>"; };
+		60700B3D136C394A00F8774A /* GlidersController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GlidersController.xib; path = Controllers/GlidersController.xib; sourceTree = "<group>"; };
+		60700B40136C395400F8774A /* GliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GliderController.h; sourceTree = "<group>"; };
+		60700B41136C395400F8774A /* GliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GliderController.m; sourceTree = "<group>"; };
+		60700B42136C395400F8774A /* GliderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GliderController.xib; sourceTree = "<group>"; };
+		60700B45136C39A500F8774A /* _Glider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Glider.h; path = Models/_Glider.h; sourceTree = "<group>"; };
+		60700B46136C39A500F8774A /* _Glider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Glider.m; path = Models/_Glider.m; sourceTree = "<group>"; };
+		60700B47136C39A500F8774A /* Glider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Glider.h; path = Models/Glider.h; sourceTree = "<group>"; };
+		60700B48136C39A500F8774A /* Glider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Glider.m; path = Models/Glider.m; sourceTree = "<group>"; };
 		60A0EE5D136C2A7600277125 /* TowPlanesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TowPlanesController.h; path = Controllers/TowPlanesController.h; sourceTree = "<group>"; };
 		60A0EE5E136C2A7600277125 /* TowPlanesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TowPlanesController.m; path = Controllers/TowPlanesController.m; sourceTree = "<group>"; };
 		60A0EE5F136C2A7600277125 /* TowPlanesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TowPlanesController.xib; path = Controllers/TowPlanesController.xib; sourceTree = "<group>"; };
@@ -131,6 +147,10 @@
 		604BC3FC136B75510003CA08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				60700B45136C39A500F8774A /* _Glider.h */,
+				60700B46136C39A500F8774A /* _Glider.m */,
+				60700B47136C39A500F8774A /* Glider.h */,
+				60700B48136C39A500F8774A /* Glider.m */,
 				604BC46B136B98850003CA08 /* _TowPlane.h */,
 				604BC46C136B988E0003CA08 /* _TowPlane.m */,
 				604BC46D136B988E0003CA08 /* TowPlane.h */,
@@ -180,6 +200,19 @@
 				604BC3F3136B6AAA0003CA08 /* PersonController.xib */,
 			);
 			name = People;
+			sourceTree = "<group>";
+		};
+		60700B39136C391700F8774A /* Gliders */ = {
+			isa = PBXGroup;
+			children = (
+				60700B3B136C394A00F8774A /* GlidersController.h */,
+				60700B3C136C394A00F8774A /* GlidersController.m */,
+				60700B3D136C394A00F8774A /* GlidersController.xib */,
+				60700B40136C395400F8774A /* GliderController.h */,
+				60700B41136C395400F8774A /* GliderController.m */,
+				60700B42136C395400F8774A /* GliderController.xib */,
+			);
+			name = Gliders;
 			sourceTree = "<group>";
 		};
 		60A0EE5B136C2A5B00277125 /* TowPlanes */ = {
@@ -284,6 +317,7 @@
 		60DD9E40136B5F14004F2564 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				60700B39136C391700F8774A /* Gliders */,
 				60A0EE5B136C2A5B00277125 /* TowPlanes */,
 				604BC469136B975B0003CA08 /* People */,
 			);
@@ -366,6 +400,8 @@
 				604BC3F5136B6AAA0003CA08 /* PersonController.xib in Resources */,
 				60A0EE61136C2A7600277125 /* TowPlanesController.xib in Resources */,
 				60A0EE66136C2B6A00277125 /* TowPlaneController.xib in Resources */,
+				60700B3F136C394A00F8774A /* GlidersController.xib in Resources */,
+				60700B44136C395400F8774A /* GliderController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +450,10 @@
 				604BC470136B988E0003CA08 /* TowPlane.m in Sources */,
 				60A0EE60136C2A7600277125 /* TowPlanesController.m in Sources */,
 				60A0EE65136C2B6A00277125 /* TowPlaneController.m in Sources */,
+				60700B3E136C394A00F8774A /* GlidersController.m in Sources */,
+				60700B43136C395400F8774A /* GliderController.m in Sources */,
+				60700B49136C39A500F8774A /* _Glider.m in Sources */,
+				60700B4A136C39A500F8774A /* Glider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

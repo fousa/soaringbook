@@ -57,6 +57,8 @@
     }
     
     [self validate];
+    
+    [self.identification becomeFirstResponder];
 }
 
 #pragma mark - Actions

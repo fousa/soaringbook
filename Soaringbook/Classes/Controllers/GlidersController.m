@@ -58,7 +58,7 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:gliderController];
     [gliderController release];
     navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
-    navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    navigationController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self.navigationController presentModalViewController:navigationController animated:YES];
     [navigationController release];

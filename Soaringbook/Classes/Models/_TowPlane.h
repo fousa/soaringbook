@@ -19,7 +19,7 @@
 
 
 
-@property (nonatomic, retain) NSString *Type;
+@property (nonatomic, retain) NSString *type;
 
 //- (BOOL)validateType:(id*)value_ error:(NSError**)error_;
 

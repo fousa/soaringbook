@@ -29,7 +29,7 @@
 
 
 
-@dynamic Type;
+@dynamic type;
 
 
 

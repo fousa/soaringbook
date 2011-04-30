@@ -96,7 +96,13 @@
     if (textField == self.identification) {
         [self.type becomeFirstResponder];
     } else {
-        [self save:nil];
+        if (!IsEmpty(self.identification.text)) {
+            [self save:nil];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fail" message:@"The tow plane was not saved because the identification field is empty." delegate:nil cancelButtonTitle:@"Retry" otherButtonTitles:nil];
+            [alert show];
+            [alert release];
+        }
     }
     return NO;
 }

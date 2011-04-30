@@ -15,6 +15,8 @@
 		604BC404136B76C10003CA08 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604BC403136B76C10003CA08 /* CoreData.framework */; };
 		604BC408136B77250003CA08 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC407136B77250003CA08 /* DataController.m */; };
 		604BC45B136B81210003CA08 /* JAVBinarySearchAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */; };
+		604BC46F136B988E0003CA08 /* _TowPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC46C136B988E0003CA08 /* _TowPlane.m */; };
+		604BC470136B988E0003CA08 /* TowPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 604BC46E136B988E0003CA08 /* TowPlane.m */; };
 		60DD9DFE136B5AA9004F2564 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFD136B5AA9004F2564 /* UIKit.framework */; };
 		60DD9E00136B5AA9004F2564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9DFF136B5AA9004F2564 /* Foundation.framework */; };
 		60DD9E02136B5AA9004F2564 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DD9E01136B5AA9004F2564 /* CoreGraphics.framework */; };
@@ -57,6 +59,10 @@
 		604BC459136B81210003CA08 /* JAVBinarySearchAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAVBinarySearchAdditions.h; sourceTree = "<group>"; };
 		604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAVBinarySearchAdditions.m; sourceTree = "<group>"; };
 		604BC464136B8D9F0003CA08 /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		604BC46B136B98850003CA08 /* _TowPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _TowPlane.h; path = Models/_TowPlane.h; sourceTree = "<group>"; };
+		604BC46C136B988E0003CA08 /* _TowPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _TowPlane.m; path = Models/_TowPlane.m; sourceTree = "<group>"; };
+		604BC46D136B988E0003CA08 /* TowPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TowPlane.h; path = Models/TowPlane.h; sourceTree = "<group>"; };
+		604BC46E136B988E0003CA08 /* TowPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TowPlane.m; path = Models/TowPlane.m; sourceTree = "<group>"; };
 		60DD9DF9136B5AA9004F2564 /* Soaringbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soaringbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DD9DFD136B5AA9004F2564 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		60DD9DFF136B5AA9004F2564 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +121,10 @@
 		604BC3FC136B75510003CA08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				604BC46B136B98850003CA08 /* _TowPlane.h */,
+				604BC46C136B988E0003CA08 /* _TowPlane.m */,
+				604BC46D136B988E0003CA08 /* TowPlane.h */,
+				604BC46E136B988E0003CA08 /* TowPlane.m */,
 				604BC3FD136B76950003CA08 /* _Person.h */,
 				604BC3FE136B76950003CA08 /* _Person.m */,
 				604BC3FF136B76950003CA08 /* Person.h */,
@@ -147,6 +157,19 @@
 				604BC45A136B81210003CA08 /* JAVBinarySearchAdditions.m */,
 			);
 			path = JAVBinarySearchAdditions;
+			sourceTree = "<group>";
+		};
+		604BC469136B975B0003CA08 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				60DD9E41136B5F7A004F2564 /* PeopleController.h */,
+				60DD9E42136B5F7A004F2564 /* PeopleController.m */,
+				60DD9E43136B5F7A004F2564 /* PeopleController.xib */,
+				604BC3F1136B6AAA0003CA08 /* PersonController.h */,
+				604BC3F2136B6AAA0003CA08 /* PersonController.m */,
+				604BC3F3136B6AAA0003CA08 /* PersonController.xib */,
+			);
+			name = People;
 			sourceTree = "<group>";
 		};
 		60DD9DEE136B5AA9004F2564 = {
@@ -238,12 +261,7 @@
 		60DD9E40136B5F14004F2564 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				60DD9E41136B5F7A004F2564 /* PeopleController.h */,
-				60DD9E42136B5F7A004F2564 /* PeopleController.m */,
-				60DD9E43136B5F7A004F2564 /* PeopleController.xib */,
-				604BC3F1136B6AAA0003CA08 /* PersonController.h */,
-				604BC3F2136B6AAA0003CA08 /* PersonController.m */,
-				604BC3F3136B6AAA0003CA08 /* PersonController.xib */,
+				604BC469136B975B0003CA08 /* People */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -366,6 +384,8 @@
 				604BC402136B76950003CA08 /* Person.m in Sources */,
 				604BC408136B77250003CA08 /* DataController.m in Sources */,
 				604BC45B136B81210003CA08 /* JAVBinarySearchAdditions.m in Sources */,
+				604BC46F136B988E0003CA08 /* _TowPlane.m in Sources */,
+				604BC470136B988E0003CA08 /* TowPlane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
